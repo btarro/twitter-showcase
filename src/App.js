@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+import { Route } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 
@@ -9,7 +10,7 @@ class App extends React.Component {
       <div className="App">
         <div>
           <Navbar />
-          <Home />
+          <Route path="/home" render={(props) => <Home {...props} />} />
         </div>
       </div>
     );

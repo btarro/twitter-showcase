@@ -12,7 +12,7 @@ const Search = (props) => {
               id="twitterySearch"
               type="text"
               className="form-control"
-              placeholder="ex: Sportsball"
+              placeholder="ex: @sega"
               name="twitterySearch"
               value={props.name}
               onChange={props.handleChange}
